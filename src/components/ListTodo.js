@@ -5,6 +5,7 @@ function ListTodo(props) {
   const {items, phrase} = props
 
   function deleteItem(e) {
+    e.preventDefault()
     props.onDeleteItem(parseInt(e.target.dataset.iditem))
   }
 
